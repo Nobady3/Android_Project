@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="16dp"
+    android:id="@+id/cardView"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="5dp"
+    app:strokeColor="@color/my_light_primary"
+    app:strokeWidth="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/item">
+
+        <TextView
+            android:id="@+id/tvCustomerId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ID"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/tvCustomerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="用户名"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/tvFullName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="姓名"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/btnModify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

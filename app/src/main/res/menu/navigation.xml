@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:title="首页"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item android:id="@+id/deposit"
+        android:title="存款"
+        android:icon="@drawable/baseline_attach_money_24"/>
+
+    <item android:id="@+id/account"
+        android:title="账户"
+        android:icon="@drawable/baseline_account_balance_24"/>
+
+    <item android:id="@+id/mine"
+        android:title="我的"
+        android:icon="@drawable/baseline_manage_accounts_24"/>
+</menu>

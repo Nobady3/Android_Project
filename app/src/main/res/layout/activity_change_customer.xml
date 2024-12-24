@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.AddCustomerActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/customer_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/my_light_primary"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:title="修改客户信息"
+        app:titleTextColor="@color/white"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="26dp">
+
+        <!-- Account Number Field -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/login_et_bg">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_account_box_24"/>
+
+            <EditText
+                android:id="@+id/etAccountNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="username"
+                android:background="@null"
+                android:paddingLeft="10dp"
+                android:textSize="14sp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Password Field -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/login_et_bg">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_https_24"/>
+
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="password"
+                android:background="@null"
+                android:paddingLeft="10dp"
+                android:textSize="14sp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Email Field -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/login_et_bg">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_email_24"/>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="email"
+                android:background="@null"
+                android:paddingLeft="10dp"
+                android:textSize="14sp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Address Field -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/login_et_bg">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_home_25"/>
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="address"
+                android:background="@null"
+                android:paddingLeft="10dp"
+                android:textSize="14sp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Phone Number Field -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/login_et_bg">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_phone_android_24"/>
+
+            <EditText
+                android:id="@+id/etPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="telphone"
+                android:background="@null"
+                android:paddingLeft="10dp"
+                android:textSize="14sp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="确认修改"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
